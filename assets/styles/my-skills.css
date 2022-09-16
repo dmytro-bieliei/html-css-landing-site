@@ -1,0 +1,40 @@
+.my-skills {
+  padding: 100px 0;
+}
+
+.my-skills-article {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.color-progress-line {
+  background-color: var(--accent-color);
+  height: 5px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 1rem;
+  
+}
+
+.color-progress-line::after {
+  position: absolute;
+  content: '';
+  background-color: var(--progress-bg-color);
+  height: 5px;
+  border-radius: 5px;
+  left: 80%;
+  right: 0%;
+}
+
+.photo-img-wrapper {
+  padding: 2rem;
+}
+
+@media screen and (max-width:992px) {
+  .my-skills-article  {
+    min-height: 400px;
+  }
+}
