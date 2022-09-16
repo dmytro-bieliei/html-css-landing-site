@@ -1,0 +1,45 @@
+.form-section {
+  background-color: var(--light-gray-bg-color);
+  padding: 5rem 0;
+
+}
+
+.text {
+  text-align: center;
+}
+
+.application {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputs {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: solid white;
+  width: 49%;
+}
+
+.text-field {
+  margin-top: 2rem;
+  width: 100%;
+  border: solid white;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .inputs-section {
+    flex-direction: column;
+  }
+  
+  .inputs {
+    width: 100%;
+  }
+}
